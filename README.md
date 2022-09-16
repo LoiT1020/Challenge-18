@@ -2,7 +2,7 @@
 
 ## Feature
 
-There is a error on Thought I need to fix so i can post new thought
+I still trying to have self reference on Friend model
 
 I still missing Reaction for Thoughts
 
