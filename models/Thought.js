@@ -7,7 +7,10 @@ const Thoughtschema = new Schema(
       type: String,
       unique: true,
       required: true,
-      trim: true,
+    },
+    username: {
+      type: String,
+      required: true,
     },
     createdAt: {
       type: Date,
@@ -50,10 +53,8 @@ const ReactionSchema = new Schema(
   }
 );
 
-const Thought = model ("Thought",Thoughtschema);
+const Thought = model ('Thought',Thoughtschema);
 
-Thoughtschema.virtual('replyCount').get(function() {
-    return this.replies.length;
-  });
+
 
 module.exports = Thought;
